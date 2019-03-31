@@ -1,22 +1,6 @@
 # Climate analysis using SQLAlchemy (sqlite) & Flask data endpoints
 **Technology stack**: Python, SQLAlchemy ORM, SQLite, Pandas, Matplotlib, Flask (JSON API endpoints)
 
-## Data Preparation
-
-Climate data for Hawaii was provided in two CSV files. The content of these files was scrubbed. 
-
-* Jupyter Notebook `data_engineering.ipynb` takes care of data preparation / cleanup tasks.
-* Pandas dataframes are created from the measurement and station CSV files. 
-* NaNs / missing values are cleaned from the data, and cleaned CSV files are saved.
-
-## Database Engineering
-
-Using SQLAlchemy to model database schema, sqlite tables for "measurements" and "stations" are created.
-
-* Jupyter Notebook `database_engineering.ipynb` used for database engineering work.
-* Pandas used to read cleaned measurements and stations CSV data.
-* Database called `hawaii.sqlite` created, using `declarative_base` to create ORM classes for each table, and used `create_all` to populate database.
-
 ## Climate Analysis
 
 Climate analysis and data exploration on new weather tables. 
